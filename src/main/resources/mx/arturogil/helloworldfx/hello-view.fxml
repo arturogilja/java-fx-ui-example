@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.arturogil.helloworldfx.HelloController">
+    <padding>
+        <Insets left="10" right="10" />
+    </padding>
+    <TextField onKeyTyped="#handleKeyboardInput" fx:id="numberTextField" alignment="CENTER_RIGHT" text="123" GridPane.columnSpan="4" />
+    <Button onAction="#handleBtnOneClick" text="Button One" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Button onAction="#handleBtnTwoClick" text="Button Two" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Button text="Button Three" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Button text="Really fucking long Button and it hasn't finished writing yet" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <Button text="Button FiveButton FiveButton FiveButton FiveButton FiveButton FiveButton FiveButton FiveButton Five" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2" />
+   <columnConstraints>
+      <ColumnConstraints percentWidth="50.0" />
+      <ColumnConstraints percentWidth="50.0" />
+   </columnConstraints>
+</GridPane>
